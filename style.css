@@ -1,0 +1,210 @@
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 200px;
+	padding-left: 275px;
+}
+.header__inner {
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+}
+.nav {
+	display: inline-block;
+	font-size: 30px;
+
+}
+.nav__link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	color: #ff5903;
+	text-decoration: none;
+	transition: color .1s linear;
+}
+.nav__link:hover {
+	text-decoration: none;
+	text-shadow: red 0 0 15px;
+}
+.layout {
+	position: relative;
+	padding-top: 100px;
+}
+.layout div {
+	position: absolute;
+}
+.col1 {
+	width: 15%
+}
+.col2 {
+	left: 15%;
+	width: 20%;
+}
+.col3 {
+	left: 35%;
+	width: 50%;
+}
+.col3-new {
+	position: absolute;
+	left: 36%;
+	width: 50%;
+	top: 48%
+}
+.col4 {
+	right: 0;
+	width: 15%;
+}
+.card-body {
+	margin: 15px;
+	font: Times New Roman;
+}
+.card {
+	font: 200% Times New Roman;
+	margin: 30px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background: #ff5903
+}
+.card-body-new {
+	margin: 70px;
+	font: Times New Roman;
+}
+.card-new {
+	font: 100% Times New Roman;
+	font-weight: bold;
+	margin: 30px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background: #ff5903
+}
+.product-wrapper {
+	padding-top: 5%;
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+}
+.product-wrapper-new {
+	padding-top: 13%;
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+}
+@media only screen and (min-width: 800px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+.product {
+	display: block;
+	border: 6px solid #ff5903;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	width: 200px;
+	height: 150px;
+}
+.products { 
+	list-style: none;
+	margin: 0;
+}
+.product-photo {
+	position: relative;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+.product-photo img {
+	padding-top: 10%;
+	padding-left: 5%;
+	max-width: 95%;
+	max-height: 95%;
+	margin: auto;
+	transition: transform .4s ease-out;
+}
+.product:hover .product-photo img {
+	transform: scale(1.1);
+}
+
+.overlay {
+   
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+   
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   
+   
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 500px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #ff5903;
+   transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
+
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+
+
+
+
+

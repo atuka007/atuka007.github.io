@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="фавикон 16x16.png" type="image/png">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<title>Суши бар - Регистрация</title>
+<style>
+   body {
+     background: url(Screenshot_24.png) no-repeat;
+   background-color: black;
+  
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 1470px; 1038px; 
+   }
+  </style>
+</head>
+<body>
+<a class="nav__link" href="sign-in.html" style="position:absolute;right:5%;top:10%;font-size:30px;
+text-shadow: red 0 0 3px;">
+Войти
+</a>
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+		<nav class="nav">
+		<a class="nav__link" href="index.html">Меню</a>
+		<a class="nav__link" href="Action.html">Акции</a>
+		<a class="nav__link" href="AboutDelivery.html">О доставке</a>
+		<a class="nav__link" href="About.html">О нас</a>
+		</nav>
+		</div>
+	</div>
+</header>
+<div class = "layout" style = "visibility:hidden;">
+<div class = "col2">
+<ul class="products clearfix">
+	<li class="product-wrapper-new">
+		<a href="" class="product"><div class="product-photo"><img src="130c4e9666ff5ae6b48d36d77372e7b5.png" alt="" class="js-open-modal" data-modal="1"></div></a>
+	</li>
+	<li class="product-wrapper-new">
+		<a href="" class="product"><div class="product-photo"><img src="130c4e9666ff5ae6b48d36d77372e7b5.png" alt="" class="js-open-modal" data-modal="1"></div></a>
+	</li>
+	<li class="product-wrapper-new">
+	<a href="" class="product"><div class="product-photo"><img src="130c4e9666ff5ae6b48d36d77372e7b5.png" alt="" class="js-open-modal" data-modal="1"></div></a>
+	</li>
+	
+</ul>
+</div>
+
+</div>
+<form id="sign-up-form">
+
+<div class = "col3-new" style="position:absolute, left:30%">
+  
+    
+      <label for="inputEmail" style="color:#ffffff">Введите email@</label>
+      <input type="email" id="inputEmail" name="inputEmail" placeholder="Ваш email">
+    
+    <div style="padding-top:30px">
+      <label for="inputPassword" style="color:#ffffff">Введите пароль</label>
+      <input type="password" id="inputPassword" name="inputPassword" placeholder = "Пароль">
+    </div>
+	<div style="padding-top:30px">
+    <label for="inputAddress" style="color:#ffffff">Адрес доставки</label>
+    <input type="text" id="inputAddress" name="inputAddress" placeholder="Адрес">
+	</div>
+  
+ <div style="padding-top:10px;border-radius: 3px;">
+  <button type="submit" style="background:#ff5903;font-size:15pt; border-color:#ff5903; font-weight:bold; position:absolute; left:170px;">GO</button>
+</div>
+</div>
+
+</form>
+<script src="logic_form.js"></script>
+</body>
+</html>
